@@ -3,7 +3,7 @@ pipeline {
 	//agent { docker { image 'python:3.7.2' } }
 	triggers {
 		pollSCM('* * * * *')
-		cron('0 0 0 * * *')
+		cron('0 0 * * *')
 	}
  	stages {
  		stage("Compile") {
