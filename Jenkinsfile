@@ -2,7 +2,7 @@ pipeline {
 	agent any
 	//agent { docker { image 'python:3.7.2' } }
 	trigger{
-		pollSCM('* * * * *’)
+		pollSCM('* * * * *')
 		cron('0 0 0 * * *')
 	}
  	stages {
